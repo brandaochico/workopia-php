@@ -11,9 +11,10 @@ function basePath($path = '') {
 }
 
 /**
- * Load a view
+ * Load a view passing database query data
  * 
  * @param string $name
+ * @param array $data
  * @return void
  */
 function loadView($name, $data = []){
