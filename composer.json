@@ -1,0 +1,16 @@
+{
+    "name": "brandaochico/workopia-php",
+    "description": "Job listings application",
+    "authors": [
+        {
+            "name": "Chico Brandão",
+            "email": "brandao.chico24@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Framework\\":"Framework/",
+            "App\\":"App/"
+        }
+    }
+}
