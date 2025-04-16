@@ -1,7 +1,13 @@
 <?php
     require '../helpers.php';
-	require basePath('Router.php');
-	require basePath('Database.php'); 
+
+	// Require file in Framework folder every time class is instantiated
+	spl_autoload_register(function ($class) {
+		$path = basePath('Framework/' . $class . '.php');
+		if(file_exists($path)) {
+			require $path;
+		}
+	});
 
 	// Instantiating Router
 	$router = new Router();
